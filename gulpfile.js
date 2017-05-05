@@ -16,8 +16,6 @@ gulp.task('watch', ['scripts'], function () {
 });
 
 
-
-
 gulp.task('start', function () {
     nodemon({
         script: 'dist/server.js'
