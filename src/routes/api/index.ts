@@ -7,6 +7,9 @@ import * as express from 'express';
 let router = express.Router();
 
 router.use('/', require('./users'));
+router.use('/profile', require('./profile'));
+router.use('/tags', require('./tags'));
+router.use('/joke', require('./joke'));
 
 
 router.use((err, req, res, next) => {
